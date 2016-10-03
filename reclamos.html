@@ -1,0 +1,152 @@
+﻿
+
+                                <!-- MIS DATOS - TAB 1 -->
+                                <div id="tab-1" class="container_detalle_tabs tab-content current">
+                                    <div class="container_detalle_tabs-overflow">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 row titulo_tabpage-diners">
+                                                    <h2>Ingreso de Reclamos y atención al Cliente</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 row subtitulo_tabpage-diners">
+                                                    <p><b>Paso 1:</b> Tipo de Solicitud</p>
+                                                </div>
+                                                
+                                                <!-- PASOS -->
+                                                <div class="col-sm-6 pasos_tabpage-diners">
+                                                    <div class="row container_step">
+                                                        <div class="container_pasos">
+                                                            <span class="active">1</span>
+                                                            <span>2</span>
+                                                            <span class="borrar-margin-right">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- TARJETA TITULAR -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Tarjeta titular</p>
+                                                    <table class="mis-datos__section-table">
+                                                        <tr>
+                                                            <td>Tarjeta</td>
+                                                            <td>
+                                                                <div class="input-field">
+                                                                    <select>
+                                                                      <option value="">Diners Hiraoka XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="1">Diners Club XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="2">Diners Miles XXX-XXXX-XXXX-1234</option>
+                                                                    </select>
+                                                                  </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </section>
+
+
+
+                                                <!-- Monto y Cuota -->
+                                                <form class="formReclamos" id="datosReclamos" method="POST" action="javascript:;">
+
+                                                    <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Tipo de solicitud</p>
+														<table class="mis-datos__section-table">
+															
+															<tr>
+																<td>¿Cuál es el motivo? <span>*</span></td>
+																<td>
+             
+                                                                      <input class="with-gap" name="tipo" type="radio" id="tipo1" checked/>
+                                                                      <label class="radio-mat" for="tipo1">Reclamo</label>
+
+                                                        
+                                                                      <input class="with-gap" name="tipo" type="radio" id="tipo2" />
+                                                                      <label class="radio-mat" for="tipo2">Queja</label>
+                                                        
+                                                                </td>
+															</tr>	
+                                                        </table>
+                                                    </section>
+                                                    <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Medio de respuesta</p>    
+                                                        <table class="mis-datos__section-table">
+															<tr>
+																<td>¿Cómo deseas recibir tu respuesta?<span>*</span></td>
+																<td>
+             
+                                                                      <input class="with-gap" name="tipo" type="radio" id="tipo3" checked/>
+                                                                      <label class="radio-mat" for="tipo3">Correo electrónico</label>
+                                                                    
+                                                                    <div class="input-absolute">
+                                                                      <label class="radio-mat" for="tipo3">Será enviado a </label>
+                                                                      <input class="mis-datos__section-input" type="email" name="numero-cuenta" value="jose.paredes@gmail.com" required>
+                                                                    </div>
+                                                                    
+                                                                      <input class="with-gap" name="tipo" type="radio" id="tipo4" />
+                                                                      <label class="radio-mat" for="tipo4">Carta</label>
+
+                                                        
+                                                                <td>
+                                                                
+                                                                    <!-- <select>
+                                                                      <option value="">Las Perdices 456, Las Condes</option>
+                                                                      <option value="1">Los Canarios 789. Providencia</option>
+                                                                    </select> -->
+                                                                
+                                                                </td>
+                                                        
+                                                                </td>
+															</tr>
+                                                        </table>
+                                                    </section>
+                                                    <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Comentarios</p>    
+                                                        <table class="mis-datos__section-table">
+                                                            <tr>
+                                                                <td>Descripción de la solicitud<span>*</span></td>
+                                                                <td>
+             
+                                                                      <textarea rows="4" cols="38" required></textarea><br>
+                                                                      <label class="datos-obligatorios" for="tipo3">Te quedan <strong>500</strong> de <strong>500</strong> caracteres </label> 
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Solución esperada<span>*</span></td>
+                                                                <td>
+             
+                                                                      <textarea rows="4" cols="38" required></textarea><br>
+                                                                      <label class="datos-obligatorios" for="tipo3">Te quedan <strong>500</strong> de <strong>500</strong> caracteres </label>  
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </section>
+													
+                                                        <table class="mis-datos__section-table">
+													       <tr>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button type="submit" class="btn-azul continuar">CONTINUAR</button>
+                                                                    <p class="pasos"><strong>Paso 1</strong> de 3</p>
+                                                                    <p class="datos-obligatorios"><!-- <i class="icon1-tick"></i> --> <span>(*)</span> Datos obligatorios. Serán tratados de  forma confidencial y segura</p>
+                                                                </td>
+                                                            </tr>		
+
+                                                        </table>
+													
+											
+												</form>
+                                       
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          
+
+
+

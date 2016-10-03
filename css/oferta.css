@@ -1,0 +1,9 @@
+/**Oferta**/
+.container__section-cabecera-oferta {
+  min-height: 162px;
+  background: url("../images/fondo-banner1.png") no-repeat right bottom;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}

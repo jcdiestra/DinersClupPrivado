@@ -1,0 +1,251 @@
+<!-- MIS DATOS - TAB 1 -->
+
+<div class="container_detalle_tabs-perfil">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 row titulo_tabpage-diners">
+                <h2>Alertas y notificaciones</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 row subtitulo_tabpage-diners">
+                <p><b>Paso 1:</b> Configuración de alertas</p>
+            </div>
+
+            <!-- PASOS -->
+            <div class="col-sm-6 pasos_tabpage-diners">
+                <div class="row container_step">
+                    <div class="container_pasos">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span class="borrar-margin-right">3</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Configuración de alertas -->
+            <section class="col-md-6">
+                <table class="alertas-table">
+                    <tr>
+                        <td>Email(s)</td>
+                        <!-- <td><a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="I am tooltip">Hover me!</a></td> -->
+                    </tr>
+                    <tr>
+                        <td>Principal:</td>
+                        <td>
+                            <input class="with-gap" name="tipo" type="radio" id="tipo1" checked />
+                            <label class="radio-mat" for="tipo1">raul.maldonado@gmail.com</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secundario:</td>
+                        <td>
+                            <input class="with-gap" name="tipo" type="radio" id="tipo2" />
+                            <label class="radio-mat" for="tipo2">maldo@hotmail.com</label>
+                        </td>
+                    </tr>
+                    <tr class="alertas-table__adicional bloque">
+                        <td>Adicional:</td>
+                        <td><p class="alertas-table__adicional-email"></p><i class="alertas-table__edit icon1-pencil"></i></td>
+                    </tr>
+                </table>
+                <div class="alertas__agregar-email-container">
+                    <a class="alertas__agregar-email" href="javascript:;">+ Agregar email</a>
+                    
+                    <div class="alertas__agregar-email-modal">
+                        <p class="alertas__agregar-email-title">Agregar email</p>
+                        <input class="alertas__agregar-email-input" type="email" name="email-adicional" >
+                        <a class="alertas__agregar-email-btn" href="javascript:;">GUARDAR</a>
+                        <a class="alertas__agregar-email-anular" href="javascript:;">ANULAR</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="col-md-6">
+                <table class="alertas-table">
+                    <tr>
+                        <td>Teléfono</td>
+                    </tr>
+                    <tr>
+                        <td>Principal:</td>
+                        <td>123456789</td>
+                    </tr>
+                    <tr class="alertas-table__adicionalTelefono bloque">
+                        <td>Adicional:</td>
+                        <td><p class="alertas-table__adicional-telefono"></p><i class="alertas-table__edit-telefono icon1-pencil"></i></td>
+                    </tr>
+                </table>
+                <div class="alertas__agregar-telefono-container">
+                    <a class="alertas__agregar-telefono" href="javascript:;">+ Agregar contacto</a>
+                    
+                    <div class="alertas__agregar-telefono-modal">
+                        <p class="alertas__agregar-telefono-title">Agregar contacto</p>
+                        <input class="alertas__agregar-telefono-input" type="email" name="email-adicional" >
+                        <a class="alertas__agregar-telefono-btn" href="javascript:;">GUARDAR</a>
+                        <a class="alertas__agregar-telefono-anular" href="javascript:;">ANULAR</a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <div class="row">
+
+            <!-- Datos de contacto -->
+            <section class="mis-datos__section">
+                <form class="formValido" id="datosContacto" method="POST" action="javascript:;">
+                    <div class="alertas-fechas-container">
+                        <span class="alertas-fechas__switch">
+                            <input type="checkbox" class="filled-in" id="filled-in-box"/>
+                            <label for="filled-in-box">Desactivar alertas</label>
+                        </span>
+                        
+                        <span class="alertas-fechas__calendario-container">
+                            <span class="alertas-fechas__calendario-title">Desde</span>
+                            <input class="fecha_nac-dp1 formato-fecha alertas-fechas__calendario-input" type="text" maxlength="10" name="date">
+                            <img class="dp-fecha1" src="images/calendario.png" alt="">
+                        </span>
+    
+                        <span class="alertas-fechas__calendario-container">
+                            <span class="alertas-fechas__calendario-title">Hasta</span>
+                            <input class="fecha_nac-dp2 formato-fecha alertas-fechas__calendario-input" type="text" maxlength="10" name="date">
+                            <img class="dp-fecha2" src="images/calendario.png" alt="">
+                        </span>
+                    </div>
+
+                    <p class="mis-datos__section-title">Configurar mis alertas</p>
+                    
+                    <div class="alertas-tables-contenedor">
+                        <table class="alertas-tables">
+                            <thead>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Detalle</th>
+                                    <th>Email Principal</th>
+                                    <th>Teléfono Principal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Consumos realizados</td>
+                                    <td>
+                                        <div class="input-field detalle">
+                                            <select>
+                                                <option value="0">Soles</option>
+                                                <option value="1">Dólares</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-field detalle">
+                                            <select>
+                                                <option value="0">50.00</option>
+                                                <option value="1">150.00</option>
+                                                <option value="2">250.00</option>
+                                                <option value="3">350.00</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-consumos" checked="checked" />
+                                        <label for="email-consumos"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-consumos" checked="checked" />
+                                        <label for="telefono-consumos"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cargo automático Diners Soles</td>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-cargos"/>
+                                        <label for="email-cargos"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-cargos"/>
+                                        <label for="telefono-cargos"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pagos</td>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-pagos"/>
+                                        <label for="email-pagos"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-pagos"/>
+                                        <label for="telefono-pagos"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Promociones</td>
+                                    <td></td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-promociones"/>
+                                        <label for="email-promociones"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-promociones"/>
+                                        <label for="telefono-promociones"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Línea de crédito disponible</td>
+                                    <td>
+                                        <div class="input-field detalle">
+                                            <select>
+                                                <option value="1">20%</option>
+                                                <option value="2">40%</option>
+                                                <option value="3">60%</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-linea"/>
+                                        <label for="email-linea"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-linea"/>
+                                        <label for="telefono-linea"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha de pago preventivo</td>
+                                    <td>
+                                        <div class="input-field detalle">
+                                            <select>
+                                                <option value="1">3 días</option>
+                                                <option value="2">10 días</option>
+                                                <option value="3">20 días</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="email-fecha"/>
+                                        <label for="email-fecha"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="filled-in" id="telefono-fecha"/>
+                                        <label for="telefono-fecha"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="submit" class="btn-azul continuar">CONTINUAR</button>
+                                
+                    <p class="pasos"><strong>Paso 1</strong> de 3</p>
+                    <p class="datos-obligatorios"><!-- <i class="icon1-tick"></i> --><span>(*)</span> Datos obligatorios. Serán tratados de  forma confidencial y segura</p>
+                </form>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<div class="overlay-diners"></div>

@@ -1,0 +1,114 @@
+.mis-datos__section-input-numero {
+  width: 100%;
+  border-radius: 3px;
+  border: solid 1px #646473;
+  height: 40px;
+  padding-left: 7px;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .mis-datos__section-input-numero {
+    width: 150px;
+    display: inline-block;
+    float: left;
+  }
+}
+
+.btn-duplicar {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #08326C;
+  color: #08326C;
+  background-color: #ffffff;
+}
+
+.btn-duplicar:focus {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #08326C;
+  color: #08326C;
+  background-color: #ffffff;
+}
+
+.btn-duplicar:active {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #08326C;
+  color: red;
+  background-color: #ffffff;
+}
+
+.btn-duplicar:hover {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #08326C;
+  color: #08326C;
+  background-color: #c8cccc;
+}
+
+.btn-duplicar:disabled {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #c8cccc;
+  color: #c8cccc;
+  background-color: #ffffff;
+}
+
+.btn-eliminar {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #f00;
+  color: #f00;
+  background-color: #ffffff;
+}
+
+.btn-eliminar:focus {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #f00;
+  color: #f00;
+  background-color: #ffffff;
+}
+
+.btn-eliminar:hover {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #f00;
+  color: #f00;
+  background-color: #eeb3a6;
+}
+
+btn-eliminar:disabled {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #c8cccc;
+  color: #c8cccc;
+  background-color: #ffffff;
+}
+
+.volvere {
+  font-size: 15px;
+  color: #00AEEF;
+  font-weight: bold;
+  position: relative;
+  vertical-align: central;
+}

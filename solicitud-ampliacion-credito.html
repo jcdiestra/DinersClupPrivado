@@ -1,0 +1,86 @@
+﻿<!-- MIS DATOS - TAB 1 -->
+<div class="container_detalle_tabs-overflow">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 row titulo_tabpage-diners">
+                                                    <h2>Solicitud de ampliación de Línea de Crédito</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 row subtitulo_tabpage-diners">
+                                                    <p><b>Paso 1:</b> Selección de tarjeta y ampliación de Línea de Crédito</p>
+                                                </div>  
+                                                
+                                                <!-- PASOS -->
+                                                <div class="col-sm-6 pasos_tabpage-diners">
+                                                    <div class="row container_step">
+                                                        <div class="container_pasos">
+                                                            <span class="active">1</span>
+                                                            <span>2</span>
+                                                            <span class="borrar-margin-right">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- TARJETA TITULAR -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Tarjeta titular</p>
+                                                    <table class="mis-datos__section-table">
+                                                        <tr>
+                                                            <td>Tarjeta</td>
+                                                            <td>
+                                                                <div class="input-field">
+                                                                    <select>
+                                                                      <option value="">Diners Hiraoka XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="1">Diners Club XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="2">Diners Miles XXX-XXXX-XXXX-1234</option>
+                                                                    </select>
+                                                                  </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </section>
+                                                
+                                                <form class="formValido" id="datosTarjeta" method="POST" action="javascript:;">
+
+                                                    <!-- Datos del adicional -->
+                                                    <section class="mis-datos__section">
+                                                        <p class="mis-datos__section-title">Línea de Crédito</p>
+                                                        <table class="mis-datos__section-table">
+                                                            <tr>
+                                                                <td>Actual (soles)</td>
+                                                                <td>
+                                                                    <label class="radio-mat" for="moneda1">10,000.00</label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Solicitada (soles)<span>*</span></td>
+                                                                <td>
+                                                                    <input class="mis-datos__section-input inputits" type="text" name="servicio" required placeholder="50,000.00">
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </section>
+                                                    <section class="mis-datos__section">
+                                                        <div class="footer__verificacion strong">
+                                                            <img src="images/span-info.png" alt="">  El monto solicitado debe ser mayor a la línea de crédito actual
+                                                        </div>
+                                                        <table class="mis-datos__section-table">
+                                                            <tr>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button type="submit" class="btn-azul continuar">CONTINUAR</button>
+                                                                    <p class="pasos"><strong>Paso 1</strong> de 3</p>
+                                                                    <p class="datos-obligatorios"><i class="icon1-tick"></i> <span>(*)</span> Datos obligatorios. Serán tratados de  forma confidencial y segura</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </section>
+                                                </form>
+                                            </div>
+                                        </div>
+</div>
+                    
+

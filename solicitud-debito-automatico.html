@@ -1,0 +1,218 @@
+﻿
+
+                                <!-- MIS DATOS - TAB 1 -->
+ <div class="container_detalle_tabs-overflow">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 row titulo_tabpage-diners">
+                                                    <h2>Solicitud de afiliación de Débito Automático</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 row subtitulo_tabpage-diners">
+                                                    <p><b>Paso 1:</b> Selección de tarjeta e ingreso de datos</p>
+                                                </div>
+                                                
+                                                <!-- PASOS -->
+                                                <div class="col-sm-6 pasos_tabpage-diners">
+                                                    <div class="row container_step">
+                                                        <div class="container_pasos">
+                                                            <span class="active">1</span>
+                                                            <span>2</span>
+                                                            <span class="borrar-margin-right">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- TARJETA TITULAR -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Tarjeta titular</p>
+                                                    <table class="mis-datos__section-table">
+                                                        <tr>
+                                                            <td>Tarjeta</td>
+                                                            <td>
+                                                                <div class="input-field">
+                                                                    <select>
+                                                                      <option value="">Diners Hiraoka XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="1">Diners Club XXX-XXXX-XXXX-1234</option>
+                                                                      <option value="2">Diners Miles XXX-XXXX-XXXX-1234</option>
+                                                                    </select>
+                                                                  </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </section>
+
+
+
+                                                <!-- FACTURACIÓN EN SOLES -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Facturación en Soles
+                                                        <!-- Switch -->
+                                                        <div class="switch">
+                                                          <label>
+                                                            <input checked type="checkbox">
+                                                            <span class="lever"></span>
+                                                          </label>
+                                                        </div>
+                                                    </p>
+                                                    <table class="mis-datos__section-table">
+                                                        <tr>
+                                                            <td>Nombre Banco <span>*</span></td>
+                                                            <td>
+                                                                <div class="input-field">
+                                                                    <select>
+                                                                      <option value="">BCP</option>
+                                                                      <option value="1">Banco 1</option>
+                                                                      <option value="2">Banco 2</option>
+                                                                    </select>
+                                                                  </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Tipo de cuenta<span>*</span></td>
+                                                            <td>
+         
+                                                                  <input class="with-gap" name="tipo" type="radio" id="tipo1" checked/>
+                                                                  <label class="radio-mat" for="tipo1">Ahorros</label>
+
+                                                    
+                                                                  <input class="with-gap" name="tipo" type="radio" id="tipo2" />
+                                                                  <label class="radio-mat" for="tipo2">Cuenta Corriente</label>
+                                                    
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Moneda de la cuenta<span>*</span></td>
+                                                            <td>
+         
+                                                                  <input class="with-gap" name="moneda" type="radio" id="moneda1" checked/>
+                                                                  <label class="radio-mat" for="moneda1">Soles</label>
+
+                                                    
+                                                                  <input class="with-gap" name="moneda" type="radio" id="moneda2" />
+                                                                  <label class="radio-mat" for="moneda2">Dólares</label>
+                                                    
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Nº de cuenta<span>*</span></td>
+                                                            <td>
+                                                                <input class="mis-datos__section-input" type="text" name="numero-cuenta" value="123-1234-1234-1234">
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </section>
+
+
+                                                <!-- FACTURACIÓN EN DOLARES -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Facturación en Dólares
+                                                          <!-- Switch -->
+                                                        <div class="switch">
+                                                          <label>
+                                                            <input type="checkbox">
+                                                            <span class="lever"></span>
+                                                          </label>
+                                                        </div>
+                                                    </p>
+                                                    <!-- <table class="mis-datos__section-table">
+                                                        <tr>
+                                                            <td>Nombre Banco <span>*</span></td>
+                                                            <td>
+                                                                <div class="input-field">
+                                                                    <select>
+                                                                      <option value="">BCP</option>
+                                                                      <option value="1">Banco 1</option>
+                                                                      <option value="2">Banco 2</option>
+                                                                    </select>
+                                                                  </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Tipo de cuenta<span>*</span></td>
+                                                            <td>
+         
+                                                                  <input class="with-gap" name="tipo" type="radio" id="tipo1" checked/>
+                                                                  <label class="radio-mat" for="tipo1">Ahorros</label>
+
+                                                    
+                                                                  <input class="with-gap" name="tipo" type="radio" id="tipo2" />
+                                                                  <label class="radio-mat" for="tipo2">Cuenta Corriente</label>
+                                                    
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Moneda de la cuenta<span>*</span></td>
+                                                            <td>
+         
+                                                                  <input class="with-gap" name="moneda" type="radio" id="moneda1" checked/>
+                                                                  <label class="radio-mat" for="moneda1">Soles</label>
+
+                                                    
+                                                                  <input class="with-gap" name="moneda" type="radio" id="moneda2" />
+                                                                  <label class="radio-mat" for="moneda2">Dólares</label>
+                                                    
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Nº de cuenta<span>*</span></td>
+                                                            <td>
+                                                                <input class="mis-datos__section-input" type="text" name="numero-cuenta" value="123-1234-1234-1234">
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td class="ComprobanteDetallado-titulo-operacion">
+                                                                <a class="guardar-frecuente" href="javascript:;">Guardar como Cuenta Frecuente</a>
+                                                                <p class="frecuente-exito">Solicitud realizada con éxito. Muchas gracias Juan Pablo</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table> -->
+                                                </section>
+                            
+
+
+                                                <!-- Pago a cargar -->
+                                                <section class="mis-datos__section">
+                                                    <p class="mis-datos__section-title">Pago a cargar</p>
+                                                        <table class="mis-datos__section-table">
+                                                            <tr>
+                                                                <td>Tipo de pago a cargar <span>*</span></td>
+                                                                <td>
+                                                                    <div class="input-field">
+                                                                        <select>
+                                                                          <option value="">Pago total del mes</option>
+                                                                          <option value="1">Opción 2</option>
+                                                                          <option value="2">Opción 3</option>
+                                                                        </select>
+                                                                      </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button type="submit" class="btn-azul continuar">CONTINUAR</button>
+                                                                    <p class="pasos"><strong>Paso 1</strong> de 3</p>
+                                                                     <p class="datos-obligatorios"><!-- <i class="icon1-tick"></i> --> <span>(*)</span> Datos obligatorios. Serán tratados de  forma confidencial y segura</p>
+                                                                </td>
+                                                            </tr>
+        
+                                                        </table>
+                                                </section>
+
+                                            </div>
+                                        </div>
+                                    </div>
+            
+      

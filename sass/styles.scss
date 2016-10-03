@@ -1,0 +1,76 @@
+﻿
+
+
+/*** MATERIALIZE ***/
+@import "components/mixins";
+@import "components/color";
+
+// Variables;
+@import "components/variables";
+@import "components/global";
+@import "components/dropdown";
+@import "components/forms/forms";
+
+
+
+
+
+/** --- ESTILOS DEL FRAMEWORK ---*/
+
+    /** BOOTSTRAP **/
+@import "_bootstrap.scss";
+
+
+/** --- FIN DEL FRAMEWORK ---*/
+
+@import "reset.scss";
+
+/** --- ESTILOS DE LOS COMPONENTES ---*/
+
+    /** VARIABLES **/
+@import "variables-diners.scss";
+
+/** Styles Icomoon **/
+@import "icon_icomoon.scss";
+
+/** Fuentes **/
+@import "fonts-diners.scss";
+
+/** --- HEADER PLANTILLA --- **/
+@import "header.scss";
+
+/** --- BODY PLANTILLA --- **/
+@import "body_plantilla.scss";
+
+/** --- Tabs Body ---**/
+@import "tabs_plantilla.scss";
+
+/** --- Sider Help --- **/
+@import "sider_help.scss";
+
+/** --- Oferta --- **/
+@import "oferta.scss";
+
+
+/** --- Confirma --- **/
+@import "confirma-oferta.scss";
+
+
+/** --- Teclado Digital --- **/
+@import "teclado_digital.scss";
+
+
+/** --- Mis Datos --- **/
+@import "mis-datos.scss";
+
+
+/** --- Alertas --- **/
+@import "alertas.scss";
+
+/** --- Salas-VIP --- **/
+@import "salas-vip.scss";
+
+/** --- Opciones-Pago --- **/
+@import "opciones-pago.scss";
+/** --- Tarjeta Adicional ---**/
+@import "tarjeta_adicional.scss"; 

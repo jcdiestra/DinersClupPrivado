@@ -1,0 +1,713 @@
+﻿
+/** -- TAB DE SIDEBAR DETALLE DE PRODUCTOS -- **/
+.container_tabs_header {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid $gris;
+
+    .tabs {
+        display: inline-flex;
+        height: 48px;
+        background-color: transparent;
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        white-space: nowrap;
+
+        li {
+            text-transform: none;
+            height: 62px;
+            position: relative;
+            z-index: 1;
+
+            a {
+                color: $textblue;
+                font-size: 18px;
+            }
+        }
+
+        .tab {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            display: block;
+            float: left;
+            text-align: center;
+            line-height: 48px;
+            height: 48px;
+            padding: 0;
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            letter-spacing: .8px;
+            width: 15%;
+            min-width: 80px;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transition: color .28s ease;
+                cursor: pointer;
+
+                &:hover {
+                    color: $negro;
+                }
+            }
+        }
+
+        .indicator {
+            background-color: #FFF;
+            border-bottom: 2px solid $darkblue;
+
+            a {
+                color: $negro !important;
+            }
+        }
+    }
+}
+
+.not_width {
+    width: initial !important;
+}
+
+.tab-content {
+    display: none;
+}
+
+.current {
+    display: inherit;
+}
+
+.container_detalle_tabs-top {
+    padding-top: 30px;
+}
+
+.container_detalle_tabs-overflow {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.container_detalle_tabs {
+    width: 100%;
+    float: left;
+
+    .head_tabla {
+        width: 100%;
+        float: left;
+        padding: 20px 10px;
+        background-color: $blanco;
+
+        .titulo_tabla {
+            width: 50%;
+            float: left;
+
+            strong {
+                /*font-family: "latolight";*/
+                font-size: 20px;
+                color: #0062AE;
+                float: left;
+                font-weight: bold;
+
+                span {
+                    /*font-family: "latolight";*/
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    /**Titulo Estado Cuentas**/
+    .head_table-cuentas {
+        width: 100%;
+        padding: 10px 0px 5px 0px;
+
+        strong {
+            font-size: 18px;
+            font-weight: bold;
+            color: $darkblue;
+            font-family: $gothammedium;
+        }
+
+        small {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.container_detalle_tabs-perfil {
+    width: 100%;
+    float: left;
+}
+
+
+.container_filtros {
+    float: left;
+    width: 50%;
+
+    ul {
+        float: left;
+        width: 100%;
+        padding-top: 5px;
+
+        li {
+            float: right;
+            color: $textblue;
+
+            a {
+                color: $textblue;
+                font-size: 14px;
+                font-family: "latoregular";
+                float: left;
+                padding: 0px 10px;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+.container_filtros_tabs_tabs {
+    background-color: $blanco;
+    float: left;
+    width: 100%;
+    border-top: 1px solid $gris;
+    position: relative;
+    padding: 20px 80px;
+    display: none;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: 301px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid $gris;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        right: 301px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid $blanco;
+    }
+}
+
+.tarjetaCreditoSelect {
+    padding: 20px 10px;
+}
+
+.container_container_select {
+    width: 200px;
+    background-color: #FFF;
+    height: 37px;
+    float: left;
+    border: 1px solid #B3B3AE;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+
+    p {
+        float: left;
+        font-family: "latoregular";
+        color: #31313F;
+        font-size: 16px;
+        width: 100%;
+        padding-top: 7px;
+        padding-left: 13px;
+    }
+
+    img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+}
+
+.container_listado_dropdown {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    border: 1px solid #B3B3AE;
+    border-top: 0px solid #B3B3AE;
+    background-color: #FFF;
+    top: 54px;
+    z-index: 3;
+    display: none;
+
+    ul {
+        float: left;
+        width: 100%;
+        background-color: #FFF;
+
+        li {
+            text-align: left;
+            display: block;
+            padding: 5px 28px;
+            transition: 0.3s;
+
+            a {
+                color: #006CD8;
+                font-family: "latoregular";
+                font-size: 14px;
+            }
+
+            &:hover {
+                background-color: rgba(187, 187, 187, 0.3);
+            }
+        }
+    }
+
+    span {
+        width: 90%;
+        float: left;
+        background-color: #999;
+        height: 1px;
+        overflow: hidden;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        float: left;
+        font-family: "latoregular";
+        font-size: 14px;
+        color: #666666;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.container_selectTarjeta {
+    width: 20%;
+    float: left;
+    margin-left: 12px;
+
+    .input-field {
+        margin-right: 0;
+        width: 100% !important;
+
+        .select-wrapper {
+            width: 100% !important;
+        }
+    }
+}
+
+.cabecera-detalle-tabs {
+    width: 100%;
+    padding: 10px 0px;
+
+    label {
+        /*float: left;*/
+        margin-right: 10px;
+        color: $darkblue;
+        font-weight: bold;
+    }
+
+
+    .boton-detalle {
+        border: 1px solid $azul_menu_btn;
+        border-radius: 50px;
+        font-size: 16px;
+        color: $azul_menu_btn;
+        padding: 6px 16px;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $azul_menu_btn;
+            color: $blanco;
+        }
+    }
+
+    .container_selectTarjeta-cuentas {
+        width: auto;
+        /*float: left;*/
+        display: inline-block;
+        margin-right: 10px;
+
+        .input-field {
+            margin-right: 0;
+            width: 100% !important;
+        }
+
+        .container_form-valores-cuentas {
+            width: 100%;
+            /*float: left;*/
+            margin-right: 15px;
+
+            select {
+                width: 100%;
+                border: 1px solid #B3B3AE;
+                border-radius: 3px;
+                height: 37px;
+                /*float: left;*/
+                cursor: pointer;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 16px;
+                /*color: $dinersclubblue;*/
+            }
+
+            img {
+                position: relative;
+                /*top: 0px;
+                right: 0px;*/
+                float: right;
+                margin-top: -23px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.container_form-valores {
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+
+    select {
+        width: 100%;
+        border: 1px solid #B3B3AE;
+        border-radius: 3px;
+        height: 37px;
+        float: left;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+    img {
+        /*position: absolute;*/
+        top: 0px;
+        /*right: 0px;*/
+        float: right;
+        margin-top: -23px;
+        margin-right: 5px;
+    }
+}
+
+.filtros_tarjetaCreditos {
+    width: 150px;
+}
+
+
+.input_filtros {
+    background-color: #FFF !important;
+    border: 1px solid #b3b3b3 !important;
+    padding: 0px 10px !important;
+    font-family: "latoregular" !important;
+    font-size: 15px !important;
+    width: 258px !important;
+    float: left;
+    display: block;
+    border-radius: 3px !important;
+    margin: 0px !important;
+    height: 34px !important;
+    margin-left: 10px !important;
+}
+
+.boton-foto-edit {
+    border: 1px solid #006DD9;
+    border-radius: 50px;
+    float: left;
+    font-size: 16px;
+    color: #006DD9;
+    padding: 8px 21px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: #006DD9;
+        color: #FFF;
+    }
+}
+
+.boton_edit {
+    padding: 6px 16px !important;
+    margin-left: 10px;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all .3s ease-out;
+}
+
+.volver_click {
+    color: #FF4D4D;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+    text-decoration: underline;
+    padding-top: 10px;
+
+    &:hover, &:focus {
+        color: #FF4D4D;
+    }
+}
+
+.estados_de_cuentas {
+    background-color: #FFF;
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+    border-top: 1px solid #DDDDDD;
+    position: relative;
+    padding: 20px 10px;
+
+    .filtro_calendarios {
+        width: 110px !important;
+    }
+}
+
+
+
+/** -- FIN DE  TAB DE SIDEBAR DETALLE DE PRODUCTOS -- **/
+
+
+/** Tablas **/
+
+.tabla-act-height {
+    min-height: 500px;
+}
+
+.tabla-actividad {
+    width: 100%;
+    background-color: $blanco;
+
+    thead tr {
+        /*background-color: #DBDDE2;*/
+        th {
+            padding: 10px 10px;
+            border-radius: 0px;
+            color: #646473;
+            /*font-family: "latolight";*/
+            font-size: 14px;
+            border-bottom: 3px solid $gris;
+            font-weight: bold;
+        }
+    }
+
+    tbody tr {
+        transition: 0.3s;
+
+        td {
+            font-size: 14px;
+            color: #646472;
+            border-bottom: 1px solid $gris;
+            padding: 10px 10px;
+            /*font-family: "latolight";*/
+            strong {
+                font-weight: bold;
+            }
+
+            span {
+                float: left;
+            }
+        }
+    }
+}
+
+
+.tabla-actividad-cuentas {
+    width: 100%;
+    background-color: $blanco;
+
+    thead tr {
+        /*background-color: #DBDDE2;*/
+        th {
+            font-family: $gothammedium;
+            padding: 5px 10px;
+            border-radius: 0px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    tbody tr {
+        transition: 0.3s;
+
+        td {
+            font-size: 14px;
+            border-bottom: 1px solid $gris;
+            padding: 10px 10px;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .footer-table {
+        background-color: $grisclaro;
+        font-family: $gothammedium;
+
+        td {
+            border-bottom: 1px solid $grisclaro !important;
+        }
+    }
+
+    .footer-table2 {
+
+        td {
+            border-bottom: none !important;
+
+            strong {
+                font-family: $gothammedium;
+                color: $darkblue;
+            }
+        }
+    }
+
+    .columna-titulo {
+        font-weight: bold;
+        color: $darkblue;
+    }
+
+    .label-rojo {
+        /*color: $rojo_oscuro;*/
+        color: $naranja;
+    }
+
+    .label-naranja {
+        color: $naranja;
+        font-size: 14px;
+    }
+}
+
+
+.tabla__columna-monto {
+    width: 160px;
+}
+
+.tabla__millas_tamanio {
+    width: 50%;
+}
+
+
+
+/**Paginador**/
+
+
+.container_paginador {
+    width: 80%;
+    margin: 0px auto;
+    overflow: hidden;
+    display: block;
+    padding-top: 20px;
+
+    .contador_pagina {
+        width: 200px;
+
+        p {
+            color: #999999;
+            font-size: 14px;
+            float: left;
+            font-family: "latoregular";
+        }
+    }
+
+    .container_paginador_contador ul {
+        float: left;
+        width: auto;
+
+        li {
+            float: left;
+            width: auto;
+            padding: 0px 4px;
+
+            a {
+                /*border-radius: 50%;*/
+                width: 22px;
+                height: 22px;
+                padding-left: 7px;
+                font-size: 13px;
+                padding-top: 1px;
+                font-size: 14px;
+                color: $textblue;
+                float: left;
+
+                &:hover {
+                    background-color: $backgroundblue;
+                    /*border-radius: 50%;*/
+                    color: $blanco;
+                    width: 22px;
+                    height: 22px;
+                    padding-left: 7px;
+                    font-size: 14px;
+                    padding-top: 1px;
+                }
+            }
+
+            .disabled_paginador {
+                color: $dinersclubblue !important;
+            }
+
+            .numeros_paginador {
+                background-color: $dinersclubblue;
+                /*border-radius: 50%;*/
+                width: 22px;
+                height: 22px;
+                color: #FFF;
+                padding-left: 7px;
+                font-size: 13px;
+                padding-top: 1px;
+            }
+
+            .text_paginador {
+                background-color: transparent !important;
+                width: 60px;
+                color: $textblue;
+
+                &:hover {
+                    color: $darkblue;
+                    background-color: transparent !important;
+                    width: 60px;
+                }
+            }
+
+            .separador_paginador {
+                background-color: transparent !important;
+
+                &:hover {
+                    color: #0062AE !important;
+                }
+            }
+        }
+    }
+}

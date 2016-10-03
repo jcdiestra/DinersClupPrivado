@@ -1,0 +1,47 @@
+/**Fuentes Lato**/
+/** LIGHTER **/
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/diners/lato-light-webfont.eot");
+  src: url("../fonts/diners/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/diners/lato-light-webfont.woff2") format("woff2"), url("../fonts/diners/lato-light-webfont.woff") format("woff"), url("../fonts/diners/lato-light-webfont.ttf") format("truetype"), url("../fonts/diners/lato-light-webfont.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** REGULAR **/
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/diners/lato-regular-webfont.eot");
+  src: url("../fonts/diners/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/diners/lato-regular-webfont.woff2") format("woff2"), url("../fonts/diners/lato-regular-webfont.woff") format("woff"), url("../fonts/diners/lato-regular-webfont.ttf") format("truetype"), url("../fonts/diners/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**Fuentes Gotham**/
+/** LIGHTER **/
+@font-face {
+  font-family: 'GothamLight';
+  src: url("../fonts/diners/Gotham-Light.eot");
+  src: url("../fonts/diners/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/diners/Gotham-Light.woff2") format("woff2"), url("../fonts/diners/Gotham-Light.woff") format("woff"), url("../fonts/diners/Gotham-Light.ttf") format("truetype"), url("../fonts/diners/Gotham-Light.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** MEDIUM **/
+@font-face {
+  font-family: 'GothamMedium';
+  src: url("../fonts/diners/Gotham-Medium.eot");
+  src: url("../fonts/diners/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/diners/Gotham-Medium.woff2") format("woff2"), url("../fonts/diners/Gotham-Medium.woff") format("woff"), url("../fonts/diners/Gotham-Medium.ttf") format("truetype"), url("../fonts/diners/Gotham-Medium.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**Fuentes Gotham**/
+/** LIGHTER **/
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/diners/Georgia.eot");
+  src: url("../fonts/diners/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/diners/Georgia.woff2") format("woff2"), url("../fonts/diners/Georgia.woff") format("woff"), url("../fonts/diners/Georgia.ttf") format("truetype"), url("../fonts/diners/Georgia.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

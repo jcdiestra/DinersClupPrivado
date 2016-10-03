@@ -1,0 +1,308 @@
+﻿<div class="help">
+
+    <!-- //////////////////// ICONOS //////////////////// -->
+    <div class="help__iconsContainer">
+        <div class="help__icon help__iconBanca"><div class="help__avatar"><i class="icon-ico-reloj"></i></div></div>
+        <div class="help__icon help__iconHablemos"><i class="icono-phone"></i></div>
+        <div class="help__icon help__iconChat"><i class="icono-chat"></i></div>
+        <div class="help__icon help__iconOficinas"><i class="icono-pointer"></i></div>
+        <div class="help__icon help__iconTarifas"><i class="icono-porcent"></i></div>
+    </div>
+    <!-- //////////////////// CAJA CON TEXTOS //////////////////// -->
+    <div class="help__hover">
+        <ul class="help__hoverLista">
+            <li class="help__hoverItem help__hoverItemBanca">MI SESIÓN</li>
+            <li class="help__hoverItem help__hoverItemHablemos">HABLEMOS</li>
+            <li class="help__hoverItem help__hoverItemChat">CHAT EN LÍNEA</li>
+            <li class="help__hoverItem help__hoverItemOficinas">OFICINAS<br>AGENTES Y CAJEROS</li>
+            <li class="help__hoverItem help__hoverItemTarifas">TARIFAS Y TASAS</li>
+        </ul>
+    </div>
+
+
+    <!-- BLOQUE BANCA POR INTERNET -->
+    <div class="help__caja help__bancaInternet">
+        <div class="help__bancaInternet-activo">
+            <div class="help__close">
+                <i class="icon-cruz icon-rotado"></i>
+            </div>
+            <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+            <p class="bancaInternet__title"><span class="icon-ico-reloj"></span>Mi sesión</p>
+
+            <div class="bancaInternet__avatarContenedor">
+                <p><strong>Genesis</strong>, igresaste a Tu Banca por Internet a las <strong>13:45 pm</strong></p>
+                <p>
+                    En caso de detectar inactividad por mas de <span><strong>3 minutos</strong></span>, procederemos a desconectarte por motivos de seguridad.
+                </p>
+            </div>
+        </div>
+        <div class="help__bancaInternet-timeOut">
+            <div class="help__close">
+                <i class="icon-cruz icon-rotado"></i>
+            </div>
+            <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+            <p class="bancaInternet__title"><span class="icon-ico-reloj"></span>Aviso de inactividad</p>
+
+            <p class="bancaInternet__aviso"><span>Genesis</span>, por inactividad y por tu seguridad en unos segundos vamos a desconectarte</p>
+            <p class="bancaInternet__segundos"></p>
+            <div class="bancaInternet__botonesContenedor"><a class="boton__lg--azul waves-effect seguirConectado" href="javascript:;">Seguir conectado</a></div>
+            <div class="bancaInternet__botonesContenedor"><a class="boton__lg--red waves-effect" href="javascript:;">Desconectar</a></div>
+        </div>
+    </div>
+
+    <!-- BLOQUE HABLEMOS -->
+    <div class="help__caja help__hablemos ">
+        <div class="help__close">
+            <i class="icon-cruz icon-rotado"></i>
+        </div>
+        <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+        <p class="bancaInternet__title"><i class="icono-phone"></i>Hablemos</p>
+        <div class="help__menuAccordion">
+            <div class="help__numbers">
+                <i class="icono-phone_numbers"></i>
+                <p class="help__txtPhones">612-2222 <span>(Lima)</span> <br>0-801-00222 <span>(Provincia)</span></p>
+                <p class="help__subTitle">Te llamamos al instante</p>
+                <p class="help__txt">Necesitamos saber donde estás y tu Nº de teléfono</p>
+            </div>
+            <form action="" id="HablemosForm">
+                <div class="bancaInternet__inputContenedor">
+                    <p class="help__label">Estoy en</p>
+                    <div class="input-field">
+                        <select id="select_validacion" class="help__select">
+                            <option value=""> Amazonas (41)</option>
+                            <option value=""> Ancash (43)</option>
+                            <option value=""> Apurimac (83)</option>
+                            <option value=""> Arequipa (54)</option>
+                            <option value=""> Ayacucho (66)</option>
+                            <option value=""> Cajamarca (76)</option>
+                            <option value=""> Callao (1)</option>
+                            <option value=""> Cusco (84)</option>
+                            <option value=""> Huancavelica (67)</option>
+                            <option value=""> Huanuco (62)</option>
+                            <option value=""> Ica (56)</option>
+                            <option value=""> Junín (64)</option>
+                            <option value=""> La Libertad (44)</option>
+                            <option value=""> Lambayeque (74)</option>
+                            <option value=""> Lima (1)</option>
+                            <option value=""> Loreto (65)</option>
+                            <option value=""> Madre de Dios (82)</option>
+                            <option value=""> Moquegua (53)</option>
+                            <option value=""> Pasco (63)</option>
+                            <option value=""> Piura (73)</option>
+                            <option value=""> Puno (51)</option>
+                            <option value=""> San Martín (42)</option>
+                            <option value=""> Tacna (52)</option>
+                            <option value=""> Tumbes (72)</option>
+                            <option value=""> Ucayali (61)</option>
+                        </select>
+                    </div>
+                    <p class="help__ejemplo">Ej: Amazonas (41)</p>
+                </div>
+                <div class="bancaInternet__inputContenedor">
+                    <p class="help__label">Nº Teléfono</p>
+                    <input class="help__telefono" minlength="8" maxlength="9" name="help__telefono" type="txt" required>
+                    <p class="help__ejemplo">Ej: 123 45 67</p>
+                </div>
+                <div class="bancaInternet__botonesContenedor">
+                    <button type="submit" class="boton__lg--white waves-effect">Iniciar conversación</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- BLOQUE CHAT EN LÍNEA -->
+    <div class="help__caja help__chatEnLinea">
+        <div class="help__close">
+            <i class="icon-cruz icon-rotado"></i>
+        </div>
+        <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+        <p class="bancaInternet__title"><i class="icono-chat"></i>Chat en Línea</p>
+        <p class="help__txt">Estamos en línea para poder atender tus consultas.</p>
+        <div class="help__menuAccordion">
+            <form action="" id="ChatForm">
+                <div class="bancaInternet__botonesContenedor"><button type="submit" class="boton__lg--white waves-effect" href="javascript:;">Iniciar conversación</button></div>
+                <p class="help__txt">Prefiero usar el <a href="javascript:;">formulario de contacto</a></p>
+            </form>
+            <table class="help__table">
+                <tr>
+                    <td><i class="icono-secure"></i></td>
+                    <td>
+                        <p class="help__tableTitle">Seguridad</p>
+                        <p class="help__tableTxt">La información y datos son de absoluta confidencialidad. Todas las conversaciones son almacenadas.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="icono-calendar"></i></td>
+                    <td>
+                        <p class="help__tableTitle">Seguridad</p>
+                        <p class="help__tableTxt">Lunes a Viernes de 8:00 a 20:00 hrs. Sábados y Domingos de 9:00 a 16:00 hrs.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- BLOQUE OFICINAS -->
+    <div class="help__caja help__oficinas">
+        <div class="help__close">
+            <i class="icon-cruz icon-rotado"></i>
+        </div>
+        <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+        <p class="bancaInternet__title"><i class="icono-pointer"></i>Oficinas y agentes</p>
+        <p class="help__txt">Encuentra una Sucursal o Agente</p>
+        <div class="help__menuAccordion">
+            <form action="">
+                <div class="help__checkdContenedor">
+                    <div>
+                        <input type="checkbox" class="filled-in" id="todos" />
+                        <label for="todos">Todos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filled-in" id="Sucursal" />
+                        <label for="Sucursal">Sucursal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filled-in" id="agente" />
+                        <label for="agente">Agentes Financiero</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filled-in" id="cajeros" />
+                        <label for="cajeros">Cajeros Global Net</label>
+                    </div>
+                </div>
+
+                <div class="bancaInternet__inputContenedor">
+                    <div class="input-field">
+                        <select id="select_validacion" class="help__select">
+                            <option value=""> Departamento...</option>
+                            <option value=""> Amazonas</option>
+                            <option value=""> Ancash</option>
+                            <option value=""> Apurimac</option>
+                            <option value=""> Arequipa</option>
+                            <option value=""> Ayacucho</option>
+                            <option value=""> Cajamarca</option>
+                            <option value=""> Calla</option>
+                            <option value=""> Cusco</option>
+                            <option value=""> Huancavelica</option>
+                            <option value=""> Huanuco</option>
+                            <option value=""> Ica</option>
+                            <option value=""> Junín</option>
+                            <option value=""> La Libertad</option>
+                            <option value=""> Lambayeque</option>
+                            <option value=""> Lim</option>
+                            <option value=""> Loreto</option>
+                            <option value=""> Madre de Dios</option>
+                            <option value=""> Moquegua</option>
+                            <option value=""> Pasco</option>
+                            <option value=""> Piura</option>
+                            <option value=""> Puno</option>
+                            <option value=""> San Martín</option>
+                            <option value=""> Tacna</option>
+                            <option value=""> Tumbes</option>
+                            <option value=""> Ucayali</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bancaInternet__inputContenedor">
+                    <div class="input-field">
+                        <select id="select_validacion" class="help__select">
+                            <option value=""> Provincia...</option>
+                            <option value=""> Provincia 1</option>
+                            <option value=""> Provincia 2</option>
+                            <option value=""> Provincia 3</option>
+                            <option value=""> Provincia 4</option>
+                            <option value=""> Provincia 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bancaInternet__inputContenedor">
+                    <div class="input-field">
+                        <select id="select_validacion" class="help__select">
+                            <option value=""> Distrito...</option>
+                            <option value=""> Distrito 1</option>
+                            <option value=""> Distrito 2</option>
+                            <option value=""> Distrito 3</option>
+                            <option value=""> Distrito 4</option>
+                            <option value=""> Distrito 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bancaInternet__botonesContenedor">
+                    <a class="boton__lg--white md waves-effect" href="javascript:;">Buscar</a>
+                    <a class="btn_sucursal" href=""><i class="icon-gps"></i>Sucursales cerca mio</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- BLOQUE TARIFAS -->
+    <div class="help__caja help__tarifas">
+        <div class="help__close">
+            <i class="icon-cruz icon-rotado"></i>
+        </div>
+        <img src="img/cruz-cerrar.png" alt="Cerrar" class="close__banca hidden-md hidden-lg" width="50">
+        <p class="bancaInternet__title"><i class="icono-porcent"></i>Tarifario General</p>
+
+        <div class="help__menuAccordion">
+            <div class="help__acordion waves-effect">
+                <p>Banca Personas</p>
+                <i class="icono-right"></i>
+            </div>
+            <div class="help_container_detalle">
+                <ul>
+                    <li class="waves-effect"><a href="javascript:;">Microfinanzas <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Préstamo <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Crédito <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Cuenta <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Seguros <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Tarjetas de Débito y Crédito <span>Ver tarifas</span></a></li>
+                </ul>
+            </div>
+
+            <div class="help__acordion waves-effect">
+                <p>Empresas</p>
+                <i class="icono-right"></i>
+            </div>
+            <div class="help_container_detalle">
+                <ul>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                </ul>
+            </div>
+
+            <div class="help__acordion waves-effect">
+                <p>Servicios</p>
+                <i class="icono-right"></i>
+            </div>
+            <div class="help_container_detalle">
+                <ul>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                </ul>
+            </div>
+
+            <div class="help__acordion waves-effect">
+                <p>Servicios</p>
+                <i class="icono-right"></i>
+            </div>
+            <div class="help_container_detalle">
+                <ul>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                    <li class="waves-effect"><a href="javascript:;">Menu items 1 <span>Ver tarifas</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="back-top">
+        <a href="#top"><i class="icon-flecha-right up"></i><span>Subir</span></a>
+    </div>
+
+</div>
+<div class="help__overlay"></div>

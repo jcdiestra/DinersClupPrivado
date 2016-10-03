@@ -1,0 +1,108 @@
+<!-- MIS DATOS - TAB 1 -->
+
+<div class="container_detalle_tabs-perfil">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 row titulo_tabpage-diners">
+                <h2>Mis Datos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 row subtitulo_tabpage-diners">
+                <p><b>Paso 1:</b> Actualizar datos de contacto</p>
+            </div>
+
+            <!-- PASOS -->
+            <div class="col-sm-6 pasos_tabpage-diners">
+                <div class="row container_step">
+                    <div class="container_pasos">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span class="borrar-margin-right">3</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Datos Personales -->
+            <section class="mis-datos__section">
+                <p class="mis-datos__section-title">Datos personales</p>
+                <table class="mis-datos__section-table">
+                    <tr>
+                        <td>Nombre</td>
+                        <td>José Armando Paredes Roca</td>
+                    </tr>
+                    <tr>
+                        <td>Tipo de documento</td>
+                        <td>DNI</td>
+                    </tr>
+                    <tr>
+                        <td>Nº de documento</td>
+                        <td>453656787</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de nacimiento</td>
+                        <td>18/07/1975</td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td>Masculino</td>
+                    </tr>
+                    <tr>
+                        <td>Estado Civil</td>
+                        <td>Soltero</td>
+                    </tr>
+                    <tr>
+                        <td>Procedencia</td>
+                        <td>Perú</td>
+                    </tr>
+                </table>
+            </section>
+
+
+            <!-- Datos de contacto -->
+            <section class="mis-datos__section">
+                <p class="mis-datos__section-title">Datos de contacto</p>
+                <form class="formValido" id="datosContacto" method="POST" action="javascript:;">
+                    <table class="mis-datos__section-table">
+                        <tr>
+                            <td>Email personal<span>*</span></td>
+                            <td>
+                                <input class="mis-datos__section-input inputits" type="email" name="emailPersonal" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email secundario<span>*</span></td>
+                            <td><input class="mis-datos__section-input inputits" type="email" name="emailSecundario" required></td>
+                        </tr>
+                        <tr>
+                            <td>Celular<span>*</span></td>
+                            <td>
+                                <div class="input-field operator">
+                                    <select>
+                                        <option value="" disabled selected>Operador</option>
+                                        <option value="1">Operador 1</option>
+                                        <option value="2">Operador 2</option>
+                                        <option value="3">Operador 3</option>
+                                    </select>
+                                </div>
+                                <input class="mis-datos__section-input-number inputits" type="number" name="numero" maxlength="10" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="submit" class="btn-azul continuar">CONTINUAR</button>
+                                <p class="pasos"><strong>Paso 1</strong> de 3</p>
+                                <p class="datos-obligatorios"><!-- <i class="icon1-tick"></i> --><span>(*)</span> Datos obligatorios. Serán tratados de  forma confidencial y segura</p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </section>
+
+        </div>
+    </div>
+</div>
